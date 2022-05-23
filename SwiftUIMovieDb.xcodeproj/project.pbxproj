@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2374A45E283A86EE007EAA35 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2374A45D283A86EE007EAA35 /* Messages.framework */; };
+		2374A461283A86EE007EAA35 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374A460283A86EE007EAA35 /* MessagesViewController.swift */; };
+		2374A464283A86EE007EAA35 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2374A462283A86EE007EAA35 /* MainInterface.storyboard */; };
+		2374A466283A86EF007EAA35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2374A465283A86EF007EAA35 /* Assets.xcassets */; };
+		2374A46A283A86EF007EAA35 /* VoteMovie.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2374A45B283A86EE007EAA35 /* VoteMovie.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2374A471283A8795007EAA35 /* BaseMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374A470283A8795007EAA35 /* BaseMovie.swift */; };
 		96C0EFF728373863006AD1DA /* SwiftUIMovieDbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0EFF628373863006AD1DA /* SwiftUIMovieDbApp.swift */; };
 		96C0EFF928373863006AD1DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0EFF828373863006AD1DA /* ContentView.swift */; };
 		96C0EFFB28373865006AD1DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C0EFFA28373865006AD1DA /* Assets.xcassets */; };
@@ -38,7 +44,38 @@
 		96C0F03D2837D172006AD1DA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C0F03C2837D172006AD1DA /* MainView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2374A468283A86EF007EAA35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96C0EFEB28373863006AD1DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2374A45A283A86EE007EAA35;
+			remoteInfo = VoteMovie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2374A46E283A86EF007EAA35 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2374A46A283A86EF007EAA35 /* VoteMovie.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2374A45B283A86EE007EAA35 /* VoteMovie.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VoteMovie.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2374A45D283A86EE007EAA35 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		2374A460283A86EE007EAA35 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		2374A463283A86EE007EAA35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2374A465283A86EF007EAA35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2374A467283A86EF007EAA35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2374A470283A8795007EAA35 /* BaseMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMovie.swift; sourceTree = "<group>"; };
 		96C0EFF328373863006AD1DA /* SwiftUIMovieDb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMovieDb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96C0EFF628373863006AD1DA /* SwiftUIMovieDbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMovieDbApp.swift; sourceTree = "<group>"; };
 		96C0EFF828373863006AD1DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +109,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2374A458283A86EE007EAA35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2374A45E283A86EE007EAA35 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96C0EFF028373863006AD1DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -82,10 +127,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2374A45C283A86EE007EAA35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2374A45D283A86EE007EAA35 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2374A45F283A86EE007EAA35 /* VoteMovie */ = {
+			isa = PBXGroup;
+			children = (
+				2374A46F283A878B007EAA35 /* Movie */,
+				2374A460283A86EE007EAA35 /* MessagesViewController.swift */,
+				2374A462283A86EE007EAA35 /* MainInterface.storyboard */,
+				2374A465283A86EF007EAA35 /* Assets.xcassets */,
+				2374A467283A86EF007EAA35 /* Info.plist */,
+			);
+			path = VoteMovie;
+			sourceTree = "<group>";
+		};
+		2374A46F283A878B007EAA35 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				2374A470283A8795007EAA35 /* BaseMovie.swift */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
 		96C0EFEA28373863006AD1DA = {
 			isa = PBXGroup;
 			children = (
 				96C0EFF528373863006AD1DA /* SwiftUIMovieDb */,
+				2374A45F283A86EE007EAA35 /* VoteMovie */,
+				2374A45C283A86EE007EAA35 /* Frameworks */,
 				96C0EFF428373863006AD1DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				96C0EFF328373863006AD1DA /* SwiftUIMovieDb.app */,
+				2374A45B283A86EE007EAA35 /* VoteMovie.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,6 +269,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2374A45A283A86EE007EAA35 /* VoteMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2374A46B283A86EF007EAA35 /* Build configuration list for PBXNativeTarget "VoteMovie" */;
+			buildPhases = (
+				2374A457283A86EE007EAA35 /* Sources */,
+				2374A458283A86EE007EAA35 /* Frameworks */,
+				2374A459283A86EE007EAA35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoteMovie;
+			productName = VoteMovie;
+			productReference = 2374A45B283A86EE007EAA35 /* VoteMovie.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 		96C0EFF228373863006AD1DA /* SwiftUIMovieDb */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96C0F00128373865006AD1DA /* Build configuration list for PBXNativeTarget "SwiftUIMovieDb" */;
@@ -200,10 +293,12 @@
 				96C0EFEF28373863006AD1DA /* Sources */,
 				96C0EFF028373863006AD1DA /* Frameworks */,
 				96C0EFF128373863006AD1DA /* Resources */,
+				2374A46E283A86EF007EAA35 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2374A469283A86EF007EAA35 /* PBXTargetDependency */,
 			);
 			name = SwiftUIMovieDb;
 			productName = SwiftUIMovieDb;
@@ -217,9 +312,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1340;
+				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
+					2374A45A283A86EE007EAA35 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					96C0EFF228373863006AD1DA = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -239,11 +337,21 @@
 			projectRoot = "";
 			targets = (
 				96C0EFF228373863006AD1DA /* SwiftUIMovieDb */,
+				2374A45A283A86EE007EAA35 /* VoteMovie */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2374A459283A86EE007EAA35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2374A466283A86EF007EAA35 /* Assets.xcassets in Resources */,
+				2374A464283A86EE007EAA35 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96C0EFF128373863006AD1DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +367,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2374A457283A86EE007EAA35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2374A471283A8795007EAA35 /* BaseMovie.swift in Sources */,
+				2374A461283A86EE007EAA35 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96C0EFEF28373863006AD1DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,7 +409,78 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2374A469283A86EF007EAA35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2374A45A283A86EE007EAA35 /* VoteMovie */;
+			targetProxy = 2374A468283A86EF007EAA35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2374A462283A86EE007EAA35 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2374A463283A86EE007EAA35 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		2374A46C283A86EF007EAA35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoteMovie/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VoteMovie;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADAIL.SwiftUIMovieDb.VoteMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2374A46D283A86EF007EAA35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VoteMovie/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = VoteMovie;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ADAIL.SwiftUIMovieDb.VoteMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		96C0EFFF28373865006AD1DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -410,6 +598,7 @@
 		96C0F00228373865006AD1DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -422,6 +611,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -438,6 +628,7 @@
 		96C0F00328373865006AD1DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +641,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,6 +658,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2374A46B283A86EF007EAA35 /* Build configuration list for PBXNativeTarget "VoteMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2374A46C283A86EF007EAA35 /* Debug */,
+				2374A46D283A86EF007EAA35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		96C0EFEE28373863006AD1DA /* Build configuration list for PBXProject "SwiftUIMovieDb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
